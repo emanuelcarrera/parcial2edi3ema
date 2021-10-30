@@ -1,0 +1,8 @@
+<div class="row"> 
+<div *ngIf="productos">
+<div class="col-3" *ngFor="let producto of productos">
+    <app-producto [producto]="producto"></app-producto>
+</div>
+
+</div>
+</div>
