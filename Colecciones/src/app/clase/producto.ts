@@ -1,10 +1,10 @@
 export class Producto {
     idArticulo!:string;
-    idUsuario!:string;
-    Nombre!:string;
-    Descripcion!:string;
+    idUsuario!:any;
+    nombre!:string;
+    descripcion!:string;
     foto!:string;
-    Valor!:string;
-    Calificacion!:string;
-    Clasificacion!:string;
+    valor!:string;
+    calificacion!:string;
+    clasificacion!:string;
 }

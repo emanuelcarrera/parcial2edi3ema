@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "edi3-c8550": {
+      "hosting": {
+        "Colecciones": [
+          "edi3-c8550"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "edi3-c8550"
+  }
+}
