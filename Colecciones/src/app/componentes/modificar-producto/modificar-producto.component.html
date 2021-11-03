@@ -1,0 +1,19 @@
+<div *ngIf="producto">
+    <label> Nombre </label>
+    <br/>
+    <input type="text" [(ngModel)]="producto.Nombre"/>
+    <br/>
+    <label> Descripcion </label>
+    <br/>
+    <input type="text" [(ngModel)]="producto.Descripcion"/>
+    <br/>
+    <br/>
+    <label> Valor </label>
+    <br/>
+    <input type="text" [(ngModel)]="producto.Valor"/>
+    <br/>
+    <input type="button" (click)="Guardar()" value="Guardar" >
+    
+
+</div>
+    

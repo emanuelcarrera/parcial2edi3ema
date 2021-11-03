@@ -17,6 +17,7 @@ import { ListaComponent } from './componentes/lista/lista.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './componentes/login/login.component';
 import { AltaProductoComponent } from './componentes/alta-producto/alta-producto.component';
+import { ModificarProductoComponent } from './componentes/modificar-producto/modificar-producto.component';
 
 
 
@@ -28,6 +29,7 @@ import { AltaProductoComponent } from './componentes/alta-producto/alta-producto
     ListaComponent,
     LoginComponent,
     AltaProductoComponent,
+    ModificarProductoComponent,
     
 
   ],

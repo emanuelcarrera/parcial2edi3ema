@@ -1,5 +1,11 @@
-<h3>{{producto.nombre}}</h3>
-<img [src]="producto.foto" class="img-fluid">
-<p>{{producto.descripcion}}</p>
-<p>{{producto.valor}}</p>
+ 
+<div class="grid-item divp"> 
+
+<h3>Nombre producto :  {{producto.Nombre}}</h3>
+<h3>Descricion : {{producto.Descripcion}}</h3>
+<h3>Valor :   {{producto.Valor}}</h3>
+<input type="button" (click)="Baja()"  value="Borrar" >
+<br>
+<input type="button" (click)="Modificar()"   value="Modificar" >
+</div>
 

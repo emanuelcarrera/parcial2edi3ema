@@ -13,9 +13,19 @@ export class ProductoService {
 
   AltaPost(Producto:Producto){
     console.log(Producto);
-   return this.clienteHttp.post('http://localhost:777/Articulo/AltaAngular', {nombre: 'QQ', descripcion: 'QQ', calificacion: 'QQ', valor: '1', idUsuario: '31'});
+   return this.clienteHttp.post('http://localhost:777/Articulo/AltaAngular', Producto);
   }
 
-  
+  BajaPost(Producto:Producto){
+
+    return this.clienteHttp.post('http://localhost:777/Articulo/BajaAngular', Producto);
+  }
+
+  EditarPost(Producto:Producto){
+
+    return this.clienteHttp.post('http://localhost:777/Articulo/EditAngular', Producto);
+  }
+
+  productoModificar!: Producto;
 
 }
