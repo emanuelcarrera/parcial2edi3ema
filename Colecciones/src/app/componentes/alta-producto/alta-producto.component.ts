@@ -16,9 +16,11 @@ import { Producto } from 'src/app/clase/producto';
 export class AltaProductoComponent implements OnInit {
     
   public producto:Producto;
+  public valid:number;
 
   constructor(private Api:ProductoService, private router:Router,) { 
     this.producto = new Producto;
+    this.valid = 0;
   }
 
 
@@ -29,10 +31,35 @@ export class AltaProductoComponent implements OnInit {
 
     this.producto.idUsuario = localStorage.getItem('idangular'); 
 
+    if(this.producto.Nombre == null || this.producto.Nombre == "")
+    {
+
+      this.valid = 1
+    }
+
+    if(this.producto.Valor == null || this.producto.Valor == "")
+    {
+
+      this.valid = 1
+    }
+
+    if(this.producto.Descripcion == null || this.producto.Descripcion == "")
+    {
+      this.valid = 1
+      
+    }
+
+    if(this.valid == 0){
     this.Api.AltaPost(this.producto).subscribe(data =>{
 
       alert("Producto creado");
     })
+    }
+    else{
+
+      alert("Debe completar todos los campos");
+      this.valid = 0;
+    }
 
   }
 }
