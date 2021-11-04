@@ -1,4 +1,7 @@
 <div  class="row"> 
+<input type="button" (click)="Nuevo()" value="Crear articulo" >
+<br/>
+<br/>  
 <div class="grid-container" *ngIf="productos">
 <div *ngFor="let producto of productos">
     <app-producto [producto]="producto"></app-producto>

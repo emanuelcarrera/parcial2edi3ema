@@ -24,10 +24,6 @@ export class AltaProductoComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  //onUpload(e:Event){
-  //    console.log(e)
-      
-  //}
 
   altaProducto(){
 
@@ -35,7 +31,7 @@ export class AltaProductoComponent implements OnInit {
 
     this.Api.AltaPost(this.producto).subscribe(data =>{
 
-      
+      alert("Producto creado");
     })
 
   }

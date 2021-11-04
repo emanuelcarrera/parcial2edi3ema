@@ -1,4 +1,5 @@
-<div *ngIf="producto">
+<body class="a" >
+<div *ngIf="producto" >
     <label> Nombre </label>
     <br/>
     <input type="text" [(ngModel)]="producto.Nombre"/>
@@ -12,8 +13,11 @@
     <br/>
     <input type="text" [(ngModel)]="producto.Valor"/>
     <br/>
+    <br/>
     <input type="button" (click)="Guardar()" value="Guardar" >
     
 
 </div>
+
+</body>
     

@@ -23,6 +23,8 @@ export class ModificarProductoComponent implements OnInit {
   {
      console.log(this.producto);
      this.Api.EditarPost(this.producto).subscribe(data =>{  
+      alert("Modificacion correcta");
+       console.log(data);
     })
   }
 }

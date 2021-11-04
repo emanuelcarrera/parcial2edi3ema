@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Producto } from 'src/app/clase/producto';
 import { ApiService } from 'src/app/helpers/api.service';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-lista',
   templateUrl: './lista.component.html',
@@ -10,7 +10,7 @@ import { ApiService } from 'src/app/helpers/api.service';
 export class ListaComponent implements OnInit {
   productos: any;
   
-  constructor(private Api:ApiService) {
+  constructor(private Api:ApiService,private router:Router) {
     
   }
 
@@ -20,6 +20,10 @@ export class ListaComponent implements OnInit {
         this.productos = data;
       });
 
+    }
+    Nuevo(){
+
+      this.router.navigate(["/altaproducto"]);
     }
 
 }

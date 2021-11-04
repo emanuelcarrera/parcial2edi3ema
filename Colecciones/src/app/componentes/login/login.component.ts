@@ -23,6 +23,10 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  Registrarse(){
+     
+    this.router.navigate(["/AltaUsuario"]);
+  }
   login(){
    
    console.log("hola");
