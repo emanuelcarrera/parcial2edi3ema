@@ -1,16 +1,18 @@
-<body class="a" >
 
-<div   >
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body  >
+
+<div  class="w3-display-middle">
 <p>Usuario</p>
-<input type="text" [(ngModel)]="nombreU" />
+<input type="text" [(ngModel)]="nombreU" class="w3-input w3-border" />
 <p>Contraseña</p>
-<input type="password" [(ngModel)]="pass"/>
+<input type="password" [(ngModel)]="pass" class="w3-input w3-border"/>
 <br/>
 <br/>
-<input type="button" (click)="login()" value="entrar" >
+<input type="button" (click)="login()" class="w3-btn w3-blue-grey" value="entrar" >
 <br/>
 <br/>
-<input type="button" (click)="Registrarse()" value="Registrarse" >
+<input type="button" (click)="Registrarse()" class="w3-btn w3-blue-grey" value="Registrarse" >
 </div>
 </body>
 

@@ -1,18 +1,20 @@
-<div class="a">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<div class="w3-display-middle" >
 <label> Nombre </label>
 <br/>
-<input type="text" [(ngModel)]="producto.Nombre"/>
+<input type="text" [(ngModel)]="producto.Nombre" class="w3-input w3-border"/>
 <br/>
 <label> Descripcion </label>
 <br/>
-<input type="text" [(ngModel)]="producto.Descripcion"/>
+<input type="text" [(ngModel)]="producto.Descripcion" class="w3-input w3-border"/>
 <br/>
 <br/>
 <label> Valor </label>
 <br/>
-<input type="number" [(ngModel)]="producto.Valor"/>
+<input type="number" [(ngModel)]="producto.Valor" class="w3-input w3-border"/>
 <br/>
-<input type="button" (click)="altaProducto()" value="Guardar" >
+<input type="button" (click)="altaProducto()" value="Guardar"  class="w3-btn w3-blue-grey">
 
 </div>
 

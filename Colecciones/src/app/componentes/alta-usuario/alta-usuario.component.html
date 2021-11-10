@@ -1,20 +1,21 @@
-<body class="a">
-<div  >
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body >
+<div class="w3-display-middle" >
     <label> Nombre de usuario </label>
     <br/>
-    <input type="text" [(ngModel)]="usuario.Nombre"/>
+    <input type="text" [(ngModel)]="usuario.Nombre" class="w3-input w3-border" />
     <br/>
     <label> password </label>
     <br/>
-    <input type="password" [(ngModel)]="usuario.pass"/>
+    <input type="password" [(ngModel)]="usuario.pass" class="w3-input w3-border" />
     <br/>
     <label> email </label>
     <br/>
-    <input type="text" [(ngModel)]="usuario.email"/>
+    <input type="text" [(ngModel)]="usuario.email" class="w3-input w3-border" />
     <br/>
     <br/>
 
-    <input type="button" (click)="altaUsuario()" value="Aceptar" >
+    <input type="button" (click)="altaUsuario()" value="Aceptar" class="w3-btn w3-blue-grey" >
     
     </div>
 </body>

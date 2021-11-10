@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
    this.Api.login(this.nombreU,this.pass).subscribe(data => { let usuario : any = data ; 
     console.log(usuario[0]);
     if( usuario[0] != undefined ){
-      window.localStorage.setItem('idangular',usuario[0].idUsuario);
+      window.sessionStorage.setItem('idangular',usuario[0].idUsuario);
       this.router.navigate(["/lista"]);
 
     }else{

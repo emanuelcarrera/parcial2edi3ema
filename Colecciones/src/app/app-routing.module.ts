@@ -6,12 +6,13 @@ import { LoginComponent } from './componentes/login/login.component';
 import { AltaProductoComponent } from './componentes/alta-producto/alta-producto.component';
 import { ModificarProductoComponent } from './componentes/modificar-producto/modificar-producto.component';
 import { AltaUsuarioComponent } from './componentes/alta-usuario/alta-usuario.component';
+import {AuthGuard} from './guards/auth.guard'
 const routes: Routes = [
-{path:'lista',component:ListaComponent},
-{path:'producto',component:ProductoComponent},
+{path:'lista',component:ListaComponent, canActivate:[AuthGuard]},
+{path:'producto',component:ProductoComponent, canActivate:[AuthGuard]},
 {path:'login',component:LoginComponent},
-{path:'altaproducto',component:AltaProductoComponent},
-{path:'Edit',component:ModificarProductoComponent},
+{path:'altaproducto',component:AltaProductoComponent, canActivate:[AuthGuard]},
+{path:'Edit',component:ModificarProductoComponent, canActivate:[AuthGuard]},
 {path:'AltaUsuario',component:AltaUsuarioComponent}
 ];
 

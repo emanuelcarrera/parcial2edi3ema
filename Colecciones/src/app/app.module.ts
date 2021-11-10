@@ -19,6 +19,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { AltaProductoComponent } from './componentes/alta-producto/alta-producto.component';
 import { ModificarProductoComponent } from './componentes/modificar-producto/modificar-producto.component';
 import { AltaUsuarioComponent } from './componentes/alta-usuario/alta-usuario.component';
+import { BuscarPipe } from './pipes/buscar.pipe';
 
 
 
@@ -32,6 +33,7 @@ import { AltaUsuarioComponent } from './componentes/alta-usuario/alta-usuario.co
     AltaProductoComponent,
     ModificarProductoComponent,
     AltaUsuarioComponent,
+    BuscarPipe,
     
 
   ],

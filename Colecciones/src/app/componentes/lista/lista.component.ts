@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class ListaComponent implements OnInit {
   productos: any;
+  filtrar:any;
   
   constructor(private Api:ApiService,private router:Router) {
     

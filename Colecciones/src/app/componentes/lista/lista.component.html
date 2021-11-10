@@ -1,9 +1,17 @@
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <div  class="row"> 
-<input type="button" (click)="Nuevo()" value="Crear articulo" >
+<input type="button" (click)="Nuevo()" value="Crear articulo" class="w3-btn w3-blue-grey" >
+<br/> 
+<br/> 
+<div class="form-group">
+    <input type="text" class="w3-input w3-border" name="filtrar" placeholder="Search..." [(ngModel)]="filtrar">
+  </div>
 <br/>
 <br/>  
 <div class="grid-container" *ngIf="productos">
-<div *ngFor="let producto of productos">
+<div *ngFor="let producto of productos | buscar:filtrar">
     <app-producto [producto]="producto"></app-producto>
 </div>
 
