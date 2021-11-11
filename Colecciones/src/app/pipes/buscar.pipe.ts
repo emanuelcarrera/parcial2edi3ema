@@ -8,11 +8,11 @@ export class BuscarPipe implements PipeTransform {
   productos!:Array<Producto>
    
 
-  transform(value: Array<Producto>, arg: any): any {
+  transform(value: Array<Producto>, arg: string): any {
 
     console.log(value);
       if (arg != "" && arg != undefined) {
-        this.productos  = value.filter(p=> p.Nombre.includes(arg) );
+        this.productos  = value.filter(p=> p.Nombre.toLowerCase().includes(arg.toLowerCase()) );
         
       }
       else{

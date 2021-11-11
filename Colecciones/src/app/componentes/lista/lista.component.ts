@@ -27,4 +27,11 @@ export class ListaComponent implements OnInit {
       this.router.navigate(["/altaproducto"]);
     }
 
+    Logout(){
+
+
+      window.sessionStorage.removeItem('idangular');
+      this.router.navigate(["/login"]);
+    }
+
 }
